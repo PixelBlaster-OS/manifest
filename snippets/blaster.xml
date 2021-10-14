@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="blaster-temp"
+           fetch="https://github.com/PixelBlaster-Temp/"
+           revision="12" />
+
+  <remote  name="blaster-devices"
+           fetch="https://github.com/PixelBlaster-Devices/"
+           revision="12" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" groups="pdk" remote="blaster-temp" />
+  <project path="manifest" name="manifest" remote="blaster-temp" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blaster-temp" />
+
+  <!-- Build -->
+  <project path="build/make" name="build_make" groups="pdk" remote="blaster-temp" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blaster-temp" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blaster-temp" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="blaster-temp" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="blaster-temp" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" groups="qcom,pdk-qcom" remote="blaster-temp" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="blaster-temp" />
+
+  <!-- External -->
+  <project path="external/selinux" name="external_selinux" groups="pdk" remote="blaster-temp" />
+  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="blaster-temp" />
+
+  <!-- Hardware -->
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="blaster-temp" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="blaster-temp" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="12-caf" remote="blaster-temp" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster-temp" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="blaster-temp" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="blaster-temp" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="blaster-temp" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="blaster-temp" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="blaster-temp" />
+
+</manifest>
