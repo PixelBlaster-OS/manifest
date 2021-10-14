@@ -55,6 +55,10 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
 
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/qcom/audio" />
