@@ -11,6 +11,7 @@
 
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blaster-temp" />
+  <project path="libcore" name="libcore" groups="pdk" remote="blaster-temp" />
   <project path="manifest" name="manifest" remote="blaster-temp" />
 
   <!-- Bootable -->
@@ -39,6 +40,7 @@
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="blaster-temp" />
 
   <!-- External -->
+  <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="blaster-temp" />
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="blaster-temp" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="blaster-temp" />
 
@@ -55,7 +57,9 @@
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster-temp" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="blaster-temp" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="blaster-temp" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster-temp" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="blaster-temp" />

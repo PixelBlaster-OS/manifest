@@ -3,6 +3,7 @@
 
   <!-- Rootdir -->
   <remove-project name="platform/bionic" />
+  <remove-project name="platform/libcore" />
 
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
@@ -54,6 +55,7 @@
   <!-- External -->
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/e2fsprogs" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
@@ -75,7 +77,9 @@
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
