@@ -91,5 +91,6 @@
 
   <!-- System -->
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/libhwbinder" />
 
 </manifest>

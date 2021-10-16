@@ -66,6 +66,7 @@
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="blaster-temp" />
+  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="blaster-temp" />
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="blaster-temp" />
