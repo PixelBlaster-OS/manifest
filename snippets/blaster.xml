@@ -12,6 +12,9 @@
   <remote  name="blaster-devices"
            fetch="https://github.com/PixelBlaster-Devices/"
            revision="12" />
+  <remote name="ParsimoniousLavender" 
+          fetch="https://github.com/ParsimoniousLavender/"
+          revision="twelve" />
 
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blaster-temp" />
@@ -61,6 +64,9 @@
   <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="pdk-qcom,qcom,qcom_display" revision="12" remote="blaster-temp" />
   <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" groups="qcom,pdk-qcom" revision="12" remote="blaster-temp" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="12-caf" remote="blaster-temp" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_display_msm8998" groups="pdk-qcom,qcom,qcom_display" revision="twelve" remote="ParsimoniousLavender" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_audio_msm8998" groups="qcom,qcom_audio,pdk-qcom" revision="twelve" remote="ParsimoniousLavender" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_media_msm8998" groups="qcom,pdk-qcom" revision="twelve" remote="ParsimoniousLavender" />
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster-temp" />
