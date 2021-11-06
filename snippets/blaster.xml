@@ -54,6 +54,7 @@
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster-temp" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blaster-temp" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blaster-temp" />
 
   <!-- Hardware -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="blaster-temp" />
