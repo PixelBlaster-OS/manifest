@@ -14,7 +14,7 @@
   <project path="external/exfatprogs" name="LineageOS/android_external_exfatprogs" groups="pdk" remote="LineageOS" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,pdk-qcom" remote="LineageOS" />
   <project path="external/libnfc-nxp" name="LineageOS/android_external_libnfc-nxp" remote="LineageOS" />
-  <project path="externel/colorkt" name="ProtonAOSP/android_external_colorkt" remote="LineageOS" revision="sc" />
+  <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="LineageOS" revision="sc" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="LineageOS" revision="sc" />
 
   <!-- Hardware -->
