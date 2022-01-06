@@ -85,6 +85,7 @@
   <project path="vendor/aosp" name="vendor_aosp" remote="blaster-temp" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="blaster-temp" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="blaster-temp" />
+  <project path="vendor/support" name="vendor_support" remote="blaster-temp" />  
   <project path="vendor/gms" name="platform_vendor_gms" remote="blaster-gitlab" />
 
 </manifest>
