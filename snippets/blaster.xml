@@ -12,9 +12,15 @@
   <remote  name="blaster-devices"
            fetch="https://github.com/PixelBlaster-Devices/"
            revision="12" />
+
   <remote name="ParsimoniousLavender" 
           fetch="https://github.com/ParsimoniousLavender/"
           revision="twelve" />
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-12.0" />
 
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blaster-temp" />
@@ -50,6 +56,7 @@
   <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="blaster-temp" />
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="blaster-temp" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="blaster-temp" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster-temp" />
