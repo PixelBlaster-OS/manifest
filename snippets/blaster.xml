@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="blaster-temp"
-           fetch="https://github.com/PixelBlaster-Temp/"
+  <remote  name="blaster"
+           fetch="https://github.com/PixelBlaster-OS/"
            revision="12" />
 
   <remote  name="blaster-gitlab"
@@ -23,15 +23,15 @@
            revision="refs/heads/arrow-12.0" />
 
   <!-- Rootdir -->
-  <project path="bionic" name="bionic" groups="pdk" remote="blaster-temp" />
-  <project path="libcore" name="libcore" groups="pdk" remote="blaster-temp" />
-  <project path="manifest" name="manifest" remote="blaster-temp" />
+  <project path="bionic" name="bionic" groups="pdk" remote="blaster" />
+  <project path="libcore" name="libcore" groups="pdk" remote="blaster" />
+  <project path="manifest" name="manifest" remote="blaster" />
 
   <!-- Bootable -->
-  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blaster-temp" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blaster" />
 
   <!-- Build -->
-  <project path="build/make" name="build_make" groups="pdk" remote="blaster-temp" >
+  <project path="build/make" name="build_make" groups="pdk" remote="blaster" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -40,59 +40,59 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blaster-temp" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blaster" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Device -->
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blaster-temp" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="blaster-temp" />
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="blaster-temp" />
-  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" groups="qcom,pdk-qcom" remote="blaster-temp" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="blaster-temp" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blaster" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="blaster" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="blaster" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" groups="qcom,pdk-qcom" remote="blaster" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="blaster" />
 
   <!-- External -->
-  <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="blaster-temp" />
-  <project path="external/selinux" name="external_selinux" groups="pdk" remote="blaster-temp" />
-  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="blaster-temp" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="blaster" />
+  <project path="external/selinux" name="external_selinux" groups="pdk" remote="blaster" />
+  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="blaster" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster-temp" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blaster-temp" />
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blaster-temp" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blaster" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blaster" />
 
   <!-- Hardware -->
-  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="blaster-temp" />
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="blaster" />
 
   <!-- Hardware -->
-  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="blaster-temp" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" groups="qcom,qcom_audio,pdk-qcom" revision="12" remote="blaster-temp" />
-  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="pdk-qcom,qcom,qcom_display" revision="12" remote="blaster-temp" />
-  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" groups="qcom,pdk-qcom" revision="12" remote="blaster-temp" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="12-caf" remote="blaster-temp" />
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="blaster" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" groups="qcom,qcom_audio,pdk-qcom" revision="12" remote="blaster" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="pdk-qcom,qcom,qcom_display" revision="12" remote="blaster" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" groups="qcom,pdk-qcom" revision="12" remote="blaster" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="12-caf" remote="blaster" />
   <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_display_msm8998" groups="pdk-qcom,qcom,qcom_display" revision="twelve" remote="ParsimoniousLavender" />
   <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_audio_msm8998" groups="qcom,qcom_audio,pdk-qcom" revision="twelve" remote="ParsimoniousLavender" />
   <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_media_msm8998" groups="qcom,pdk-qcom" revision="twelve" remote="ParsimoniousLavender" />
 
   <!-- Packages -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster-temp" />
-  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="blaster-temp" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="blaster-temp" />
-  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster-temp" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster-temp" />
-  <project path="packages/apps/Explosives" name="packages_apps_Explosives" remote="blaster-temp" />  
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="blaster" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="blaster" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster" />
+  <project path="packages/apps/Explosives" name="packages_apps_Explosives" remote="blaster" />  
 
   <!-- System -->
-  <project path="system/core" name="system_core" groups="pdk" remote="blaster-temp" />
-  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="blaster-temp" />
+  <project path="system/core" name="system_core" groups="pdk" remote="blaster" />
+  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="blaster" />
 
   <!-- Vendor -->
-  <project path="vendor/aosp" name="vendor_aosp" remote="blaster-temp" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="blaster-temp" />
-  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="blaster-temp" />
-  <project path="vendor/support" name="vendor_support" remote="blaster-temp" />  
+  <project path="vendor/aosp" name="vendor_aosp" remote="blaster" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="blaster" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="blaster" />
+  <project path="vendor/support" name="vendor_support" remote="blaster" />  
   <project path="vendor/gms" name="platform_vendor_gms" remote="blaster-gitlab" />
 
 </manifest>
