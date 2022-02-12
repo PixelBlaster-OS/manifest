@@ -91,7 +91,9 @@
   <project path="system/update_engine" name="system_update_engine" remote="blaster" />
 
   <!-- Vendor -->
-  <project path="vendor/aosp" name="vendor_aosp" remote="blaster" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="blaster" >
+    <linkfile src="build.sh" dest="build.sh" />
+  </project>
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="blaster" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="blaster" />
   <project path="vendor/support" name="vendor_support" remote="blaster" />  
