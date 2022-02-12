@@ -22,18 +22,14 @@ repo init -u https://github.com/PixelBlaster-OS/manifest -b 12
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-### Build ###
+### Building ###
 
+The included build script `./build.sh` handles all the building steps for the specified device
+automatically.
+
+Run the following command to find out how to use the script.
 ```bash
-
-# Set up environment
-$ . build/envsetup.sh
-
-# Choose a target
-$ lunch aosp_$device-userdebug
-
-# Build the code
-$ mka bacon -jX
+$ ./build.sh -h
 ```
 
 ### Submitting Patches ###
