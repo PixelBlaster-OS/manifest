@@ -46,7 +46,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blaster" />
+  <project path="device/aosp/sepolicy" name="device_custom_sepolicy" remote="blaster" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="blaster" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="blaster" />
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" groups="qcom,pdk-qcom" remote="blaster" />
