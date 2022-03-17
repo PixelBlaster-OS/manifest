@@ -16,7 +16,7 @@ To initialize your local repository, use a command like this:
 
 ```bash
 
-repo init -u https://github.com/PixelBlaster-OS/manifest -b 12
+repo init -u https://github.com/PixelBlaster-OS/manifest -b 12.1
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags

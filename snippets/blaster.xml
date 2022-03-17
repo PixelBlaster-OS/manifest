@@ -3,7 +3,7 @@
 
   <remote  name="blaster"
            fetch="https://github.com/PixelBlaster-OS/"
-           revision="12" />
+           revision="12.1" />
 
   <remote  name="blaster-gitlab"
            fetch="https://gitlab.com/Blaster4385/"
