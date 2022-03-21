@@ -23,6 +23,7 @@
            revision="refs/heads/arrow-12.0" />
 
   <!-- Rootdir -->
+  <project path="art" name="art" groups="pdk" remote="blaster" />
   <project path="bionic" name="bionic" groups="pdk" remote="blaster" />
   <project path="libcore" name="libcore" groups="pdk" remote="blaster" />
   <project path="manifest" name="manifest" remote="blaster" />
@@ -57,6 +58,8 @@
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="blaster" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="blaster" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="blaster" />
+  <project path="external/zlib-ng" name="external_zlib-ng" remote="blaster" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
@@ -78,6 +81,7 @@
   <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_media_msm8998" groups="qcom,pdk-qcom" revision="twelve" remote="ParsimoniousLavender" />
 
   <!-- Packages -->
+  <project path="packages/modules/adb" name="packages_modules_adb" remote="blaster" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="blaster" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="blaster" />

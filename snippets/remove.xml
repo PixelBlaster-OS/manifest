@@ -2,12 +2,13 @@
 <manifest>
 
   <!-- Rootdir -->
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/libcore" />
 
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
-
+bionic
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
@@ -19,7 +20,7 @@
   <remove-project name="device/google/barbet" />
   <remove-project name="device/google/barbet-kernel" />
   <remove-project name="device/google/barbet-sepolicy" />
-  <remove-project name="device/google/bonito" />
+  <remove-project name="device/google/bonito" />bionic
   <remove-project name="device/google/bonito-kernel" />
   <remove-project name="device/google/bonito-sepolicy" />
   <remove-project name="device/google/bramble" />
@@ -56,6 +57,8 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <remove-project name="platform/external/zlib" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
@@ -78,6 +81,7 @@
   <remove-project name="platform/hardware/interfaces"/>
 
   <!-- Packages -->
+  <remove-project name="platform/packages/modules/adb" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
