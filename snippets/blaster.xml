@@ -7,7 +7,7 @@
 
   <remote  name="blaster-gitlab"
            fetch="https://gitlab.com/Blaster4385/"
-           revision="12" />
+           revision="12.1" />
 
   <remote  name="blaster-devices"
            fetch="https://github.com/PixelBlaster-Devices/"
@@ -60,6 +60,7 @@
   <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="blaster" />
   <project path="external/zlib-ng" name="external_zlib-ng" remote="blaster" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="blaster-gitlab" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
@@ -88,6 +89,7 @@
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster" />
   <project path="packages/apps/Explosives" name="packages_apps_Explosives" remote="blaster" />  
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="blaster-gitlab" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="blaster" />
