@@ -90,6 +90,7 @@
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster" />
   <project path="packages/apps/Explosives" name="packages_apps_Explosives" remote="blaster" />  
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="blaster-gitlab" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blaster" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="blaster" />
