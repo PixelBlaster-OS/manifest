@@ -91,6 +91,7 @@
   <project path="packages/apps/Explosives" name="packages_apps_Explosives" remote="blaster" />  
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="blaster-gitlab" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blaster" />
+  <project name="packages_apps_Updater" path="packages/apps/Updater" remote="blaster" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="blaster" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="blaster" />
 
