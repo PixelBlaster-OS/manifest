@@ -103,6 +103,7 @@
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="blaster" >
     <linkfile src="build.sh" dest="build.sh" />
+    <linkfile src="ota.sh" dest="ota.sh" />
   </project>
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="blaster" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="blaster" />
