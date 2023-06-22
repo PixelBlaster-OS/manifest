@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="blaster"
+           fetch="https://github.com/PixelBlaster-OS/"
+           revision="13" />
+
+  <remote  name="blaster-gitlab"
+           fetch="https://gitlab.com/pixelblaster-os/"
+           revision="13" />
+
+  <remote  name="blaster-devices"
+           fetch="https://github.com/PixelBlaster-Devices/"
+           revision="13" />
+
+
+  <!-- Rootdir -->
+  <project path="manifest" name="manifest" remote="blaster" />
+
+  <!-- Build -->
+  <project path="build/make" name="build_make" groups="pdk" remote="blaster" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blaster" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/blaster/sepolicy" name="device_blaster_sepolicy" remote="blaster" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster" />
+
+  <!-- System -->
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blaster" />
+
+  <!-- Vendor -->
+  <project path="vendor/blaster" name="vendor_blaster" remote="blaster" />
+  <project path="vendor/gms" name="vendor_gms" remote="blaster-gitlab" />
+
+</manifest>

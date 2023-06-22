@@ -1188,4 +1188,7 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" clone-depth="1" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
   <!-- END open-source projects -->
+
+  <include name="snippets/remove.xml" />
+  <include name="snippets/blaster.xml" />
 </manifest>
