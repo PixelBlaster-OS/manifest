@@ -40,6 +40,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="blaster" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="blaster-gitlab" />
