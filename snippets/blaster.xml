@@ -15,7 +15,12 @@
 
 
   <!-- Rootdir -->
+  <project path="art" name="art" remote="blaster" />
+  <project path="bionic" name="bionic" remote="blaster" />
   <project path="manifest" name="manifest" remote="blaster" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blaster" />
 
   <!-- Build -->
   <project path="build/make" name="build_make" groups="pdk" remote="blaster" >
@@ -35,21 +40,36 @@
   <!-- Device -->
   <project path="device/blaster/sepolicy" name="device_blaster_sepolicy" remote="blaster" />
 
+  <!-- External -->
+  <project path="external/gptfdisk" name="external_gptfdisk" groups="pdk" remote="blaster" />
+  <project path="external/mksh" name="external_mksh" groups="pdk" remote="blaster" />
+
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blaster" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="blaster" />
 
   <!-- Packages -->
+  <project path="packages/apps/BlasterThemePicker" name="packages_apps_BlasterThemePicker" remote="blaster" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blaster" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="blaster" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="blaster" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="blaster" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="blaster-gitlab" />
 
   <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="blaster" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blaster" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="blaster" />
 
   <!-- Vendor -->
   <project path="vendor/blaster" name="vendor_blaster" remote="blaster" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="blaster" />
   <project path="vendor/gms" name="vendor_gms" remote="blaster-gitlab" />
   <project path="vendor/partner_modules" name="vendor_partner_modules" remote="blaster-gitlab" />
 

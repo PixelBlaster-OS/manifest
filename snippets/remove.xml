@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Rootdir -->
+  <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
+
+  <!-- Bootable -->
+  <remove-project name="platform/bootable/recovery" />
+
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
@@ -69,9 +76,14 @@
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
 
+  <!-- External -->
+  <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/mksh" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/qcom/audio" />
@@ -88,7 +100,12 @@
   <remove-project name="platform/hardware/interfaces"/>
 
   <!-- Packages -->
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/services/Telecomm" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/module_sdk/art" />
@@ -109,6 +126,8 @@
   <remove-project name="platform/prebuilts/module_sdk/Wifi" />
 
   <!-- System -->
+  <remove-project name="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/update_engine" />
 
 </manifest>
