@@ -41,10 +41,12 @@
   <project path="device/blaster/sepolicy" name="device_blaster_sepolicy" remote="blaster" />
 
   <!-- External -->
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="blaster" />
   <project path="external/gptfdisk" name="external_gptfdisk" groups="pdk" remote="blaster" />
   <project path="external/mksh" name="external_mksh" groups="pdk" remote="blaster" />
 
   <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blaster" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blaster" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="blaster" />
