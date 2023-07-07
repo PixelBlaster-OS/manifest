@@ -3,7 +3,8 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
-           review="https://android-review.googlesource.com/" />
+           review="https://android-review.googlesource.com/"
+           clone-depth="1" />
   <default revision="refs/tags/android-13.0.0_r63"
            remote="aosp"
            sync-j="4" />
