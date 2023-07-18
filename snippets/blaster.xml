@@ -56,6 +56,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/BlasterThemePicker" name="packages_apps_BlasterThemePicker" remote="blaster" />
+  <project path="packages/apps/BlasterWallpapers" name="packages_apps_BlasterWallpapers" remote="blaster" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blaster" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="blaster-gitlab" />
@@ -64,6 +65,7 @@
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="blaster" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="blaster" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="blaster" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="blaster-gitlab" />
