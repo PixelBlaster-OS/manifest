@@ -6,6 +6,7 @@ Credits:
 =======
  * [**AOSP**](https://android.googlesource.com)
  * [**LineageOS**](https://github.com/LineageOS)
+ * [**StatixOS**](https://github.com/StatixOS)
 
 -----------------------------------------------------------------------------
 

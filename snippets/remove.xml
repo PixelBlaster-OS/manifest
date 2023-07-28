@@ -94,6 +94,7 @@
   <remove-project name="platform/frameworks/opt/telephony" />
 
   <!-- Hardware -->
+  <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bt" />
   <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
