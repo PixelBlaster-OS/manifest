@@ -2,8 +2,9 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/"
+           clone-depth="1" />
   <default revision="refs/tags/android-14.0.0_r18"
            remote="aosp"
            sync-j="4" />
@@ -1269,4 +1270,7 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+
+  <include name="snippets/remove.xml" />
+  <include name="snippets/blaster.xml" />
 </manifest>
