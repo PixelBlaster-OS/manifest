@@ -43,7 +43,7 @@
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
 
   <!-- Hardware -->
-  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" groups="pdk" remote="blaster" />
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" groups="pdk" remote="github" revision="lineage-21.0" />
 
   <!-- Packages -->
   <project path="packages/apps/BlasterThemePicker" name="packages_apps_BlasterThemePicker" remote="blaster" />
