@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="blaster"
-           fetch="https://github.com/PixelBlaster-OS/"
+           fetch="../PixelBlaster-OS"
            revision="14" />
 
   <remote  name="blaster-gitlab"
