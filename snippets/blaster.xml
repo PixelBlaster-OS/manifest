@@ -5,6 +5,10 @@
            fetch="../PixelBlaster-OS"
            revision="14" />
 
+  <remote  name="blaster-gitea"
+           fetch="https://git.tablaster.dev/pixelblaster-os/"
+           revision="14" />
+
   <remote  name="blaster-gitlab"
            fetch="https://gitlab.com/pixelblaster-os/"
            revision="14" />
@@ -49,7 +53,7 @@
   <project path="packages/apps/BlasterThemePicker" name="packages_apps_BlasterThemePicker" remote="blaster" />
   <project path="packages/apps/BlasterWallpapers" name="packages_apps_BlasterWallpapers" remote="blaster" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blaster" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="blaster-gitlab" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="blaster-gitea" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blaster" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="blaster" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="blaster" />
@@ -65,6 +69,6 @@
     <linkfile src="build.sh" dest="build.sh" />
   </project>
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="blaster" />
-  <project path="vendor/gms" name="vendor_gms" remote="blaster-gitlab" />
+  <project path="vendor/gms" name="vendor_gms" remote="blaster-gitea" />
 
 </manifest>
