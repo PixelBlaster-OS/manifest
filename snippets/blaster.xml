@@ -25,6 +25,9 @@
   <project path="bionic" name="bionic" remote="blaster" />
   <project path="manifest" name="manifest" remote="blaster" />
 
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="blaster" />
+
   <!-- Build -->
   <project path="build/make" name="build_make" groups="pdk" remote="blaster" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -42,6 +45,11 @@
 
   <!-- Device -->
   <project path="device/blaster/sepolicy" name="device_blaster_sepolicy" remote="blaster" />
+
+  <!-- External -->
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="blaster" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="blaster" />
+  <project path="external/mksh" name="external_mksh" remote="blaster" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk" remote="blaster" />
