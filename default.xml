@@ -5,11 +5,11 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/"
            clone-depth="1" />
-  <default revision="refs/tags/android-14.0.0_r21"
-           remote="aosp"
+  <default revision="refs/tags/android-14.0.0_r27"
+          remote="aosp"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r21"/>
+  <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r27"/>
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
